@@ -47,17 +47,19 @@
                     {\ifcommandkey{state}{\contactseparator}{}}}%
             }%
             {}%
-            \ifcommandkey{github}%
-            {%
-                \github{\commandkey{github}}%
-                \ifcommandkey{linkedin}{\contactseparator}%
-                {\ifcommandkey{state}{\contactseparator}{}}%
-            }%
-            {}%
             \ifcommandkey{linkedin}%
             {%
                 \linkedin{\commandkey{linkedin}}%
-                \ifcommandkey{state}{\contactseparator}{}%
+                % Insert a line break before github (only when linkedin exists).
+                % Change \\[2pt] to \\ or \\[<len>] to tweak spacing.
+                \ifcommandkey{github}{\\[2pt]}%
+                {\ifcommandkey{state}{\contactseparator}{}}%
+            }%
+            {}%
+            \ifcommandkey{github}%
+            {%
+                \github{\commandkey{github}}%
+                {\ifcommandkey{state}{\contactseparator}{}}%
             }%
             {}%
             \ifcommandkey{state}%
