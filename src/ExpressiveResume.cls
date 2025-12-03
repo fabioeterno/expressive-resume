@@ -88,7 +88,7 @@
 
 
 %% ----- Four Required Configurations -----
-\renewcommand{\normalsize}{\fontsize{12pt}{12pt}\selectfont}
+\renewcommand{\normalsize}{\fontsize{10pt}{11pt}\selectfont}
 \setlength{\textwidth}{7.5in}
 \setlength{\textheight}{10in}
 \pagenumbering{arabic}

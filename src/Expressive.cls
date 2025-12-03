@@ -10,7 +10,7 @@
 % None currently
 
 %% ----- Parent Class -----
-\LoadClass[letterpaper,10pt]{article}
+\LoadClass[letterpaper,9pt]{article}
 
 %% ----- Required Packages -----
 %% Support non-ascii characters
